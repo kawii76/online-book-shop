@@ -1,0 +1,153 @@
+@charset "ISO-8859-1";
+
+body{
+	
+	font-family:sans-serif;
+	background-image:url("../Images/bkgrnd.gif");
+	background-size:100% 100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+.logo{
+	
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	 border-radius: 50%;
+}
+
+h1,h2{
+	
+	text-align:center;
+	
+}
+
+hr{
+	
+	border:1px solid black;
+	
+}
+
+ul.menu{
+	
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:black;
+}
+li.menu{
+	
+	display:block;
+	float:left;
+}
+
+a li{
+	
+	display:block;
+	color:white;
+	text-align:center;
+	padding:20px 20px;
+	text-decoration:none;
+	
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+
+  color:black;
+}
+
+div.divstyle{
+	background-color:#cc96cf ;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+input[type="text"]
+{
+	width:25%;
+	border-radius:4px;
+
+}
+input[type="date"]
+{
+	border-radius:4px;
+
+}
+label.lab{
+	font-size:18px;
+	font-variant:bold;
+	margin-left:10px;
+	
+}
+
+.button{
+	  background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 12px 24px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+}
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.orderData{
+	background-color:rgb(231, 233, 226);
+	width:500px;
+	
+}
+.tbl{
+	/*margin-top: 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;*/
+	margin:15px 10px 10px 10px;
+	border-style:groove;
+	border-color:darkblue;
+	padding:3px;
+}
+
+
+footer {
+  text-align: center;
+  padding:20px;
+  background-color:#111;
+  bottom: 0;
+  width: auto;
+}
+.horizontal1{
+	width:50%;
+	text-align:left;
+	margin-left:center;
+	border:1px solid white;
+	
+}
+
+.para{
+	font-size:10px;
+	text-align:center;
+	color:white;
+}
+
+a.under{
+	
+	text-align:center;
+	color:white;
+}

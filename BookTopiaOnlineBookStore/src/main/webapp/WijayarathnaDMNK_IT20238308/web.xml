@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+     <servlet>
+         	<servlet-name>insertinquiry</servlet-name>
+         	<servlet-class>com.inquiryIT20238308.InquiryServlet</servlet-class>
+     </servlet>
+         
+     <servlet-mapping>
+         	<servlet-name>insertinquiry</servlet-name>
+         	<url-pattern>/insertin</url-pattern>
+     </servlet-mapping>
+     
+     
+   
+     
+     <servlet>
+		<servlet-name>inquiryListdetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.InquryGetServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>inquiryListdetails</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	  <servlet>
+		<servlet-name>AdmininquiryListdetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.AdminInquryGetServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AdmininquiryListdetails</servlet-name>
+		<url-pattern>/Adminlist</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>UpdateinquiryDetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.UpdateinquiriesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateinquiryDetails</servlet-name>
+		<url-pattern>/Updateinquiry</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>DeleteinquiryDetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.DeleteinquiriesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteinquiryDetails</servlet-name>
+		<url-pattern>/Deleteinquiry</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	  <servlet>
+		<servlet-name>AddAnswer</servlet-name>
+		<servlet-class>com.inquiryIT20238308.AddAnswerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddAnswer</servlet-name>
+		<url-pattern>/AddAns</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+		<servlet-name>GetAllInq</servlet-name>
+		<servlet-class>com.inquiryIT20238308.GetAllInquries</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetAllInq</servlet-name>
+		<url-pattern>/Alllist</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+		<servlet-name>GetAllInqBySearch</servlet-name>
+		<servlet-class>com.inquiryIT20238308.InquiryGetBySearch</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetAllInqBySearch</servlet-name>
+		<url-pattern>/searchweb</url-pattern>
+	</servlet-mapping>
+ 
+         
+</web-app>

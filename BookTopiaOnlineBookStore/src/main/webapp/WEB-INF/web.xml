@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BookTopiaOnlineBookStore</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+         	<servlet-name>insertinquiry</servlet-name>
+         	<servlet-class>com.inquiryIT20238308.InquiryServlet</servlet-class>
+     </servlet>
+         
+     <servlet-mapping>
+         	<servlet-name>insertinquiry</servlet-name>
+         	<url-pattern>/insertin</url-pattern>
+     </servlet-mapping>
+     
+     
+   
+     
+     <servlet>
+		<servlet-name>inquiryListdetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.InquryGetServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>inquiryListdetails</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	  <servlet>
+		<servlet-name>AdmininquiryListdetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.AdminInquryGetServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AdmininquiryListdetails</servlet-name>
+		<url-pattern>/Adminlist</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>UpdateinquiryDetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.UpdateinquiriesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateinquiryDetails</servlet-name>
+		<url-pattern>/Updateinquiry</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>DeleteinquiryDetails</servlet-name>
+		<servlet-class>com.inquiryIT20238308.DeleteinquiriesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteinquiryDetails</servlet-name>
+		<url-pattern>/Deleteinquiry</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	  <servlet>
+		<servlet-name>AddAnswer</servlet-name>
+		<servlet-class>com.inquiryIT20238308.AddAnswerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddAnswer</servlet-name>
+		<url-pattern>/AddAns</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+		<servlet-name>GetAllInq</servlet-name>
+		<servlet-class>com.inquiryIT20238308.GetAllInquries</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetAllInq</servlet-name>
+		<url-pattern>/Alllist</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+		<servlet-name>GetAllInqBySearch</servlet-name>
+		<servlet-class>com.inquiryIT20238308.InquiryGetBySearch</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetAllInqBySearch</servlet-name>
+		<url-pattern>/searchweb</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BookServlet</servlet-name>
+		<servlet-class>com.book.BookServlet</servlet-class>
+	</servlet>
+  
+  <servlet-mapping>
+		<servlet-name>BookServlet</servlet-name>
+		<url-pattern>/BookServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+		<servlet-name>bookinsert</servlet-name>
+		<servlet-class>com.book.BookInsert</servlet-class>
+	</servlet>
+  
+  <servlet-mapping>
+		<servlet-name>BookInsert</servlet-name>
+		<url-pattern>/BookInsert</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+		<servlet-name>updatebook</servlet-name>
+		<servlet-class>com.employee.UpdateBookServlet</servlet-class>
+	</servlet>
+  
+  <servlet-mapping>
+		<servlet-name>UpdateBookServlet</servlet-name>
+		<url-pattern>/UpdateBookServlet</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>deletebook</servlet-name>
+		<servlet-class>com.book.DeleteBookServelet</servlet-class>
+	</servlet>
+  
+  <servlet-mapping>
+		<servlet-name>DeleteBookServelet</servlet-name>
+		<url-pattern>/DeleteBookServelet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>validate</servlet-name>
+    	<servlet-class>com.orders.SearchOrdersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>validate</servlet-name>
+    	<url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>validatename</servlet-name>
+    	<servlet-class>com.orders.SearchSupplierServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>validatename</servlet-name>
+    	<url-pattern>/validatesup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    	<servlet-name>Orderinsert</servlet-name>
+    	<servlet-class>com.orders.Orderinsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>Orderinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+	    <servlet-name>Orderupdate</servlet-name>
+	    <servlet-class>com.orders.UpdateOrdersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>Orderupdate</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+  	<servlet>
+    <servlet-name>DeleteOrders</servlet-name>
+    <servlet-class>com.orders.DeleteOrdersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrders</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
